@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/atma_bold</item>
+        <item>@font/chewy</item>
+        <item>@font/gloria_hallelujah</item>
+        <item>@font/gochi_hand</item>
+        <item>@font/homemade_apple</item>
+        <item>@font/just_another_hand</item>
+    </array>
+</resources>

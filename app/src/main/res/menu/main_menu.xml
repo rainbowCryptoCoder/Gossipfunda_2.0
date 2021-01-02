@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="Home"
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_baseline_home_24">
+        </item>
+        <item
+            android:title="Electronics"
+            android:id="@+id/menu_electronics"
+            android:icon="@drawable/ic_baseline_ai">
+        </item>
+        <item
+            android:title="Artificial Intelligence"
+            android:id="@+id/menu_ai"
+            android:icon="@drawable/ic_baseline_home_24">
+        </item>
+        <item
+            android:title="Subscribe"
+            android:id="@+id/menu_subscribe"
+            android:icon="@drawable/ic_baseline_subscribe">
+        </item>
+        <item
+            android:title="Career"
+            android:id="@+id/menu_career"
+            android:icon="@drawable/ic_baseline_career">
+        </item>
+        <item
+            android:title="Privacy Policy"
+            android:id="@+id/menu_privacyPolicy"
+            android:icon="@drawable/ic_baseline_privacy">
+        </item>
+        <item
+            android:title="About Us"
+            android:id="@+id/menu_aboutUs"
+            android:icon="@drawable/ic_baseline_aboutus">
+        </item>
+    </group>
+
+        <item
+            android:title="Communication">
+        <menu>
+            <item
+                android:title="Rate Us"
+                android:id="@+id/menu_rateUs"
+                android:icon="@drawable/ic_baseline_rateus">
+            </item>
+
+            <item
+                android:title="Log Out"
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/ic_baseline_logout">
+            </item>
+        </menu>
+        </item>
+</menu>

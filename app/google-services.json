@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "916846086282",
+    "project_id": "gossipfunda2",
+    "storage_bucket": "gossipfunda2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916846086282:android:ecbe343994a078fc814573",
+        "android_client_info": {
+          "package_name": "com.gossipfunda.gossipfunda2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916846086282-u6vmdp4d4s1qcfof0ve187usk7tnr94i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gossipfunda.gossipfunda2",
+            "certificate_hash": "69e7bd783f4eabeaf898066b18d58cdb7b041cff"
+          }
+        },
+        {
+          "client_id": "916846086282-lhisebhgnr9344q4kejgmcheakoch4b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9HqnQaZdEYmG5BraCfRAfsdzQ4W15qgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916846086282-lhisebhgnr9344q4kejgmcheakoch4b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gossipfunda.gossipfunda2" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_gossip_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_gossip_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gossipfunda20" >
+        <activity android:name=".aboutus_webview" >
+        </activity>
+        <activity android:name=".sign_in_page" />
+        <activity android:name=".aboutus" />
+        <activity android:name=".splash_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".privacy_policy" />
+        <activity android:name=".career_webview" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4982509960655189~4280004677" />
+        <activity android:name=".subcribe_webview" />
+        <activity android:name=".ai_webview" />
+        <activity android:name=".electronics_webview" />
+        <activity android:name=".blog_webview" />
+        <activity android:name=".contactus_webview" />
+        <activity android:name=".sponsor_webview" />
+        <activity android:name=".channel_webview" />
+        <activity android:name=".apple_webview" />
+        <activity android:name=".android_webview" />
+        <activity android:name=".home_webview" />
+        <activity android:name=".search_webview" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

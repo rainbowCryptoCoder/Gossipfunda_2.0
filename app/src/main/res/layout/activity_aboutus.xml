@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutus">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@+id/appBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="#384443"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+            app:title="About Us"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:expandedTitleMarginStart="18dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/aboutus_background"
+            android:id="@+id/collapsingToolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+                app:layout_collapseMode="pin"
+                android:id="@+id/toolbarid"/>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We here at Gossipfunda push out interesting articles on tech topics along with helpful videos on our YouTube channel. We are dedicated to bringing you the best articles and tips which will make your day easier. Gossipfunda covers a wide variety of topics such as the changes in the Android, Apple, and tech community in general. If you like what we do then feel free to tell us using the contact us section and we will be happy to see our Gossipfunda community happy. We also hire people who are passionate about the tech world and want to cover it with our articles. If you are interested in Gossipfunda then you can contact the admin with the career section. We are always happy to include new members who have the same passion for tech as us in our Gossipfunda family."
+            android:textSize="30dp"
+            android:lineSpacingExtra="5dp"
+            android:padding="5dp"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        android:src="@drawable/ic_web"
+        app:layout_anchor="@id/appBar"
+        app:layout_anchorGravity="right|bottom"
+        android:layout_marginRight="20dp"
+        android:onClick="about_web"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

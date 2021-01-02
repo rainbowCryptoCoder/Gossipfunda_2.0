@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Gossipfunda 2.0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="admob_interstitial_id">ca-app-pub-4982509960655189/9363782724</string>
+</resources>

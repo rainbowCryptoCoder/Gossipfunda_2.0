@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_in_page"
+    android:background="@drawable/sign_in_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/google"
+        android:layout_marginHorizontal="40dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/google_logo"/>
+
+    <TextView
+        android:id="@+id/google_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/google_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-50dp"
+        android:fontFamily="@font/gochi_hand"
+        android:text="Sign-in with Google"
+        android:textSize="38dp"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/bt_sign_in"
+        android:layout_alignBottom="@+id/google_text"
+        android:layout_marginBottom="-90dp"
+        android:layout_marginHorizontal="60dp"/>
+
+</RelativeLayout>
