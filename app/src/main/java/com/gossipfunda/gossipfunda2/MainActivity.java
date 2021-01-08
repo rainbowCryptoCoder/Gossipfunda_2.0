@@ -59,33 +59,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
 
-//        //initialize sign in client
-//        GoogleSignInAccount googleSignInAccount = GoogleSignIn.getLastSignedInAccount(this);
-//        tvName.setText(googleSignInAccount.getDisplayName());
-//        Glide.with(this).load(googleSignInAccount.getPhotoUrl()).into(ivImage);
+        if (currentUser != null){
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            drawerLayout.addDrawerListener(toggle);
+            toggle.syncState();
 
-//        //initialize firebase auth
-//        firebaseAuth = FirebaseAuth.getInstance();
-//        //initialize firebase user
-//        FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-//        //check condition
-//        if (firebaseUser != null){
-//            //when firebase user is not equal to null
-//            //set image on image view
-//            Glide.with(MainActivity.this)
-//                    .load(firebaseUser.getPhotoUrl()).into(ivImage);
-//            //set name on text view
-//            tvName.setText(firebaseUser.getDisplayName());
-//        }
-
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        updateNavHeader();
+            NavigationView navigationView = findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
+            updateNavHeader();
+        }
+        else{
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+            drawerLayout.addDrawerListener(toggle);
+            toggle.syncState();
+            NavigationView navigationView = findViewById(R.id.nav_view);
+            navigationView.setNavigationItemSelectedListener(this);
+        }
 
     }
 

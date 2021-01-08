@@ -35,23 +35,6 @@ public class career_webview extends AppCompatActivity {
         setContentView(R.layout.activity_career_webview);
 
 
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
-//        mInterstitialAd.loadAd(adRequest);
-//        //interstitialAd.loadAd(new adRequest().Builder().build());
-//        //prepare an Interstitial Ad listener
-//        mInterstitialAd.setAdListener(new AdListener(){
-//            @Override
-//            public void onAdLoaded() {
-//                if (interstitialAd.isLoaded()){
-//                    interstitialAd.show();
-//                }
-//                else{
-//                    Toast.makeText(career_webview.this, "Error!", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//        });
-
         webView = findViewById(R.id.career_webview);
         webView.setWebViewClient(new WebViewClient());
         webSettings = webView.getSettings();
@@ -60,44 +43,13 @@ public class career_webview extends AppCompatActivity {
         webView.loadUrl("https://gossipfunda.com/career/");
 
         //MobAd
-//        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-//            @Override
-//            public void onInitializationComplete(InitializationStatus initializationStatus) {
-//            }
-//        });
-//
-//        interstitialAd = new InterstitialAd(this);
-//        interstitialAd.setAdUnitId(getString(R.string.admob_interstitial_id));
-//        interstitialAd.loadAd(new AdRequest.Builder().build());
-//        interstitialAd.setAdListener(new AdListener() {
-//            @Override
-//            public void onAdLoaded() {
-//                // Load the next interstitial.
-//                interstitialAd.loadAd(new AdRequest.Builder().build());
-//                if (interstitialAd.isLoaded()){
-//                    interstitialAd.show();
-//                }
-//                else{
-//                    Toast.makeText(career_webview.this, "Error!", Toast.LENGTH_SHORT).show();
-//                }
-//            }
-//
-//            @Override
-//            public void onAdFailedToLoad(LoadAdError loadAdError) {
-//                Toast.makeText(career_webview.this, "Failed to load!", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
-        //MobAd
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
             @Override
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
 
-//        mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
 
         //InterstitialAd
         //prepare the interstitial ad

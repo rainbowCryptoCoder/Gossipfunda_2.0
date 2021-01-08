@@ -127,4 +127,10 @@ public class sign_in_page extends AppCompatActivity {
     private void displayToast(String s){
         Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
     }
+
+    public void skipBtn(View view) {
+        Intent intent =  new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
