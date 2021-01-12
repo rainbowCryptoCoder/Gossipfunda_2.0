@@ -1,4 +1,4 @@
-package com.gossipfunda.gossipfunda2;
+package com.gossipfunda.gossipfunda_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-public class android_webview extends AppCompatActivity {
+public class subcribe_webview extends AppCompatActivity {
 
     WebView webView;
     WebSettings webSettings;
@@ -19,16 +19,16 @@ public class android_webview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_android_webview);
+        setContentView(R.layout.activity_subcribe_webview);
 
-        webView = findViewById(R.id.android_wevView);
+        webView = findViewById(R.id.subscribe_webView);
         webView.setWebViewClient(new WebViewClient());
         webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //webSettings.setBuiltInZoomControls(true);
-        webView.loadUrl("https://gossipfunda.com/category/android/");
+        webView.loadUrl("https://gossipfunda.com/subscribe/");
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar_android);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar_subscribe);
         progressBar.setMax(100);
 
         webView.setWebViewClient(new WebViewClient(){

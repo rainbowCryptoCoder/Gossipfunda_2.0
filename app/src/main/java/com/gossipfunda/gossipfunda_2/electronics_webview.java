@@ -1,4 +1,4 @@
-package com.gossipfunda.gossipfunda2;
+package com.gossipfunda.gossipfunda_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-public class contactus_webview extends AppCompatActivity {
+public class electronics_webview extends AppCompatActivity {
 
     WebView webView;
     WebSettings webSettings;
@@ -19,16 +19,16 @@ public class contactus_webview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contactus_webview);
+        setContentView(R.layout.activity_electronics_webview);
 
-        webView = findViewById(R.id.contactus_webView);
+        webView = findViewById(R.id.electronics_webView);
         webView.setWebViewClient(new WebViewClient());
         webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //webSettings.setBuiltInZoomControls(true);
-        webView.loadUrl("https://gossipfunda.com/contact-us/");
+        webView.loadUrl("https://gossipfunda.com/category/electronics/");
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar_contactus);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar_electronics);
         progressBar.setMax(100);
 
         webView.setWebViewClient(new WebViewClient(){

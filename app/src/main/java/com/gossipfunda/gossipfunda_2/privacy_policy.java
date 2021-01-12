@@ -1,4 +1,4 @@
-package com.gossipfunda.gossipfunda2;
+package com.gossipfunda.gossipfunda_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-public class sponsor_webview extends AppCompatActivity {
+public class privacy_policy extends AppCompatActivity {
 
     WebView webView;
     WebSettings webSettings;
@@ -19,16 +19,16 @@ public class sponsor_webview extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sponsor_webview);
+        setContentView(R.layout.activity_privacy_policy);
 
-        webView = findViewById(R.id.sponsor_webView);
+        webView = findViewById(R.id.PrivacyView);
         webView.setWebViewClient(new WebViewClient());
         webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         //webSettings.setBuiltInZoomControls(true);
-        webView.loadUrl("https://gossipfunda.com/sponsor/");
+        webView.loadUrl("https://gossipfunda.com/privacy-policy/");
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar_sponsor);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar_privacy);
         progressBar.setMax(100);
 
         webView.setWebViewClient(new WebViewClient(){

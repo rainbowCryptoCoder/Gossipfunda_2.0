@@ -1,4 +1,4 @@
-package com.gossipfunda.gossipfunda2;
+package com.gossipfunda.gossipfunda_2;
 
 import org.junit.Test;
 

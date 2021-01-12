@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gossipfunda.gossipfunda2" >
+    package="com.gossipfunda.gossipfunda_2" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -12,34 +12,34 @@
         android:roundIcon="@mipmap/ic_gossip_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Gossipfunda20" >
-        <activity android:name=".aboutus_webview" >
+        <activity android:name="com.gossipfunda.gossipfunda_2.aboutus_webview" >
         </activity>
-        <activity android:name=".sign_in_page" />
-        <activity android:name=".aboutus" />
-        <activity android:name=".splash_screen" >
+        <activity android:name="com.gossipfunda.gossipfunda_2.sign_in_page" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.aboutus" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.splash_screen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".privacy_policy" />
-        <activity android:name=".career_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.privacy_policy" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.career_webview" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-4982509960655189~4280004677" />
-        <activity android:name=".subcribe_webview" />
-        <activity android:name=".ai_webview" />
-        <activity android:name=".electronics_webview" />
-        <activity android:name=".blog_webview" />
-        <activity android:name=".contactus_webview" />
-        <activity android:name=".sponsor_webview" />
-        <activity android:name=".channel_webview" />
-        <activity android:name=".apple_webview" />
-        <activity android:name=".android_webview" />
-        <activity android:name=".home_webview" />
-        <activity android:name=".search_webview" />
-        <activity android:name=".MainActivity" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.subcribe_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.ai_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.electronics_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.blog_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.contactus_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.sponsor_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.channel_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.apple_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.android_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.home_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.search_webview" />
+        <activity android:name="com.gossipfunda.gossipfunda_2.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

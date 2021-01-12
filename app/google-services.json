@@ -7,17 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:916846086282:android:ecbe343994a078fc814573",
+        "mobilesdk_app_id": "1:916846086282:android:475ad996b845ebf8814573",
         "android_client_info": {
-          "package_name": "com.gossipfunda.gossipfunda2"
+          "package_name": "com.gossipfunda.gossipfunda_2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "916846086282-u6vmdp4d4s1qcfof0ve187usk7tnr94i.apps.googleusercontent.com",
+          "client_id": "916846086282-8jka84mndid1n8qsqc442j01pn29shg1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.gossipfunda.gossipfunda2",
+            "package_name": "com.gossipfunda.gossipfunda_2",
             "certificate_hash": "69e7bd783f4eabeaf898066b18d58cdb7b041cff"
           }
         },
