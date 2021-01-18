@@ -181,14 +181,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 case R.id.menu_rateUs:
                     Vibrate(150);
-                    Uri uri = Uri.parse("https://playstore.com/store/apps/details?id=" + getApplicationContext()
-                            .getPackageName());
-                    Intent i8 = new Intent(Intent.ACTION_VIEW, uri);
+//                    Uri uri = Uri.parse("https://playstore.com/store/apps/details?id=" + getApplicationContext()
+//                            .getPackageName());
+//                    Intent i8 = new Intent(Intent.ACTION_VIEW, uri);
                     try {
-                        startActivity(i8);
+//                        startActivity(i8);
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("market://details?id=" + "com.gossipfunda.gossipfunda_2")));
                     }
                     catch (Exception e){
-                        Toast.makeText(this, "Unable to open\n"+e.getMessage(), Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("https://play.google.com/store/apps/details?id=com.gossipfunda.gossipfunda_2")));
+//                        Toast.makeText(this, "Unable to open\n"+e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                     break;
 
